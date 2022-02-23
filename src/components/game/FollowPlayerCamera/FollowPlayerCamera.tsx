@@ -1,4 +1,4 @@
-import { GameCamera, PhysicsComponent } from "mini-engine";
+import { GameCamera, PhysicsComponent } from "angry-pixel";
 import { Player } from "../../../gameObjects/player/Player";
 
 export class FollowPlayerCamera extends PhysicsComponent {

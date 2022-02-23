@@ -1,10 +1,4 @@
-import {
-  Animator,
-  Component,
-  Vector2,
-  SpriteRenderer,
-  AssetManager,
-} from "angry-pixel";
+import { Animator, Component, ComponentTypes } from "angry-pixel";
 import { InputController } from "../../../gameObjects/InputController";
 
 export class SpriteStatus extends Component {
@@ -14,7 +8,7 @@ export class SpriteStatus extends Component {
   private direction: number | null;
 
   protected start(): void {
-    this.animator = this.getComponentByType(TYPE_ANIMATOR) as Animator;
+    this.animator = this.getComponentByType<Animator>(ComponentTypes.Animator);
     this.direction = null;
 
     this.inputController = this.findGameObjectByName(

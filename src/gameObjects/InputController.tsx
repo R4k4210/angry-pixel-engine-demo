@@ -4,7 +4,7 @@ import {
   InputManager,
   KeyboardController,
   Vector2,
-} from "mini-engine";
+} from "angry-pixel";
 
 export class InputController extends GameObject {
   public axes: Vector2 = new Vector2();

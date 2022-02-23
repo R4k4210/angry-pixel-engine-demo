@@ -9,10 +9,10 @@ export class LoadingScene extends Scene {
   constructor() {
     super();
 
-    AssetManager.createImage(backgroundAsset);
-    AssetManager.createImage(tavern);
-    AssetManager.createImage(playerSpriteSheet);
-    AssetManager.createImage(insideTavern);
+    AssetManager.loadImage(backgroundAsset);
+    AssetManager.loadImage(tavern);
+    AssetManager.loadImage(playerSpriteSheet);
+    AssetManager.loadImage(insideTavern);
   }
 
   protected start(): void {

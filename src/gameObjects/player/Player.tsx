@@ -9,7 +9,7 @@ import {
   Rectangle,
   Sprite,
   Vector2,
-} from "mini-engine";
+} from "angry-pixel";
 import {
   frontWalk,
   leftWalk,
@@ -21,8 +21,8 @@ import {
   idleBack,
 } from "../../animation/player/Walk";
 import { PlayerMovements } from "../../components/game/PlayerMovements/PlayerMovements";
-import playerSpritesheet from "../../assets/player/player_spritesheet.png";
 import { SpriteStatus } from "../../components/game/PlayerMovements/SpriteStatus";
+import playerSpritesheet from "../../assets/player/player_spritesheet.png";
 
 export class Player extends GameObject {
   private spriteRenderer: SpriteRenderer;

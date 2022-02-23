@@ -8,7 +8,7 @@ import {
   RigidBody,
   RigidBodyType,
   SceneManager,
-} from "mini-engine";
+} from "angry-pixel";
 import tavern from "../../../assets/sceneOne/buildings/tavern.png";
 
 export class Tavern extends GameObject {

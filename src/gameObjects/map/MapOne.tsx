@@ -4,7 +4,7 @@ import {
   Sprite,
   SpriteRenderer,
   Vector2,
-} from "mini-engine";
+} from "angry-pixel";
 import mapOne from "../../assets/sceneOne/map_one.png";
 
 export class MapOne extends GameObject {

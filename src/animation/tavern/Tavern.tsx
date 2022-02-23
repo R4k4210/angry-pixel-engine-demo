@@ -1,7 +1,7 @@
-import { AnimationConfig, Animation, Sprite, AssetManager } from "angry-pixel";
+import { Animation, Sprite, AssetManager } from "angry-pixel";
 import taverInside from "../../assets/sceneOne/buildings/inside_tavern_spritesheet.png";
 
-export const tavernAnimation = (): AnimationConfig =>
+export const tavernAnimation = (): Animation =>
   new Animation({
     loop: true,
     framerate: 0.3,

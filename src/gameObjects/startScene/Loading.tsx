@@ -1,4 +1,4 @@
-import { GameObject, TextRenderer, Vector2 } from "mini-engine";
+import { GameObject, TextRenderer, Vector2 } from "angry-pixel";
 
 export class Loading extends GameObject {
   constructor() {
@@ -13,9 +13,9 @@ export class Loading extends GameObject {
           text: "LOADING",
           fontUrl: "font/PrStart.ttf",
           fontFamily: "PrStart",
-          size: 16,
+          fontSize: 16,
           lineSeparation: 4,
-          pivot: "center",
+          orientation: "center",
         })
     );
   }

@@ -1,4 +1,4 @@
-import { InputManager, GameObject, Vector2, GameCamera } from "mini-engine";
+import { InputManager, GameObject, Vector2, GameCamera } from "angry-pixel";
 
 export default class SpotPointer extends GameObject {
   // cache

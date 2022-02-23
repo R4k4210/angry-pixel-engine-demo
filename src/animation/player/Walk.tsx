@@ -1,9 +1,9 @@
-import { Animation, AnimationConfig, AssetManager, Sprite } from "angry-pixel";
+import { Animation, AssetManager, Sprite } from "angry-pixel";
 import playerSpritesheet from "../../assets/player/player_spritesheet.png";
 
-const SPRITE_SPEED = 0.2;
+const SPRITE_SPEED = 10;
 
-export const frontWalk = (): AnimationConfig =>
+export const frontWalk = (): Animation =>
   new Animation({
     loop: true,
     framerate: SPRITE_SPEED,
@@ -17,7 +17,7 @@ export const frontWalk = (): AnimationConfig =>
     ),
   });
 
-export const backWalk = (): AnimationConfig =>
+export const backWalk = (): Animation =>
   new Animation({
     loop: true,
     framerate: SPRITE_SPEED,
@@ -31,7 +31,7 @@ export const backWalk = (): AnimationConfig =>
     ),
   });
 
-export const rigthWalk = (): AnimationConfig =>
+export const rigthWalk = (): Animation =>
   new Animation({
     loop: true,
     framerate: SPRITE_SPEED,
@@ -59,7 +59,7 @@ export const leftWalk = (): Animation =>
     ),
   });
 
-export const idleFront = (): AnimationConfig =>
+export const idleFront = (): Animation =>
   new Animation({
     loop: false,
     framerate: 0,
@@ -73,7 +73,7 @@ export const idleFront = (): AnimationConfig =>
     ),
   });
 
-export const idleBack = (): AnimationConfig =>
+export const idleBack = (): Animation =>
   new Animation({
     loop: false,
     framerate: 0,
@@ -87,7 +87,7 @@ export const idleBack = (): AnimationConfig =>
     ),
   });
 
-export const idleRight = (): AnimationConfig =>
+export const idleRight = (): Animation =>
   new Animation({
     loop: false,
     framerate: 0,
@@ -101,7 +101,7 @@ export const idleRight = (): AnimationConfig =>
     ),
   });
 
-export const idleLeft = (): AnimationConfig =>
+export const idleLeft = (): Animation =>
   new Animation({
     loop: false,
     framerate: 0,

@@ -1,4 +1,4 @@
-import { BoxCollider, GameObject, RigidBody, RigidBodyType } from "mini-engine";
+import { BoxCollider, GameObject, RigidBody, RigidBodyType } from "angry-pixel";
 
 export class StageBounds extends GameObject {
   constructor() {

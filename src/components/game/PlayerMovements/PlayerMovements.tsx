@@ -9,9 +9,8 @@ export class PlayerMovements extends Component {
   private position: Vector2 = new Vector2();
 
   protected start(): void {
-    this.inputController = this.findGameObjectByName(
-      "InputController"
-    ) as InputController;
+    this.inputController =
+      this.findGameObjectByName<InputController>("InputController");
   }
 
   protected update(): void {

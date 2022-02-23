@@ -5,8 +5,8 @@ import {
   SpriteRenderer,
   Vector2,
   Animator,
-  TYPE_ANIMATOR,
-} from "mini-engine";
+  ComponentTypes,
+} from "angry-pixel";
 import tavernInside from "../../../assets/sceneOne/buildings/inside_tavern_spritesheet.png";
 import { tavernAnimation } from "../../../animation/tavern/Tavern";
 
@@ -42,7 +42,7 @@ export class TavernInside extends GameObject {
   }
 
   protected start(): void {
-    this.animator = this.getComponentByType(TYPE_ANIMATOR) as Animator;
+    this.animator = this.getComponentByType<Animator>(ComponentTypes.Animator);
   }
 
   protected update(): void {
